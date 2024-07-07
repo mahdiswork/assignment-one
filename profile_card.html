@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        *{
+            margin: 10px 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 450px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            margin: 10px;
+            height: 600px;
+        }
+        .image img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            outline: 5px solid red;
+        }
+        .description{
+            text-align: center;
+        }
+        .counter{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        .counter span{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .buttonarea{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .btnone{
+            padding: 15px 35px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .btntwo{
+            padding: 15px 35px;
+            background-color: black;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .btntwo:hover{
+            padding: 15px 35px;
+            background-color: white;
+            border-radius: 10px;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+            border: 2px solid #000;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .pro{
+            position: absolute;
+            top: 5px;
+            left: 15px;
+            background-color: #ccc;
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+        .conatct{
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 15px;
+        }
+        .conatct .text-group{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="pro">PRO</span>
+            <div class="image">
+                <img src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg" alt="avater">
+            </div>
+            <div class="description">
+                <h2>Sara Riley</h2>
+                <h4>UX/UI Designer</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, sit. Quasi praesentium natus numquam quis dolor. Beatae similique voluptates labore.</p>
+            </div>
+
+            <div class="conatct">
+                <div class="text-group">
+                    <p><i></i> <span>+1 123 456 7890</span></p>
+                </div>
+                <div class="text-group">
+                    <p><i></i> <span>example@gmail.com</span></p>
+                </div>
+            </div>
+
+            <div class="counter">
+                <div class="projects">
+                    <span>Projects</span>
+                    <h4>18</h4>
+                </div>
+                <div class="following">
+                    <span>Following</span>
+                    <h4>464</h4>
+                </div>
+                <div class="followers">
+                    <span>Followers</span>
+                    <h4>852</h4>
+                </div>
+            </div>
+            
+            <div class="buttonarea">
+                <button class="btnone">Follow</button>
+                <button class="btntwo">Hire Me</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
